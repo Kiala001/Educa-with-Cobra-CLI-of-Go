@@ -18,6 +18,7 @@ func main() {
 
     rootCMD.AddCommand(RegisterCmd)
     rootCMD.AddCommand(ListCmd)
+    rootCMD.AddCommand(DeleteCmd)
     rootCMD.AddCommand(StudentCmd)
     
     rootCMD.Execute()

@@ -23,3 +23,7 @@ func (repo *Student_Repository) GetAll() []Student {
 	}
 	return list
 }
+
+func (repo *Student_Repository) Delete(student_id string) {
+	delete(repo.students, student_id)
+}
