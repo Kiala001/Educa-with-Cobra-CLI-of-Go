@@ -6,7 +6,6 @@ import (
 	"github.com/spf13/cobra"
 )
 
-
 func main() {
     var rootCMD = &cobra.Command{
         Use: "School",

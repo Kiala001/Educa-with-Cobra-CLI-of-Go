@@ -12,7 +12,6 @@ var (
 	idade int
 )
 
-//var repo = NewStudentRepositoryMemory()
 var repo, _ = NewSQLiteStudentRepository()
 
 var RegisterCmd = &cobra.Command{
@@ -75,7 +74,6 @@ var DeleteCmd = &cobra.Command{
 		fmt.Println("Estudante com o codigo ",Email," deletado com sucesso.")
 	},
 }
-
 
 func init() {
 	RegisterCmd.Flags().StringVar(&nome, "nome", "", "Nome do estudante")
